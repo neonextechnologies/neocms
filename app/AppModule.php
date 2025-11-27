@@ -4,6 +4,7 @@ namespace App;
 
 use NeoPhp\Core\Attributes\Module;
 use App\Providers\AppServiceProvider;
+use NeoPhp\Theme\ThemeServiceProvider;
 
 /**
  * AppModule - Root Application Module
@@ -18,6 +19,7 @@ use App\Providers\AppServiceProvider;
     controllers: [],
     providers: [
         AppServiceProvider::class,
+        ThemeServiceProvider::class,
     ]
 )]
 class AppModule

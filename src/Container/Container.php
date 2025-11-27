@@ -23,6 +23,13 @@ class Container
         return static::$instance;
     }
 
+    public static function setInstance(Container $container = null): ?Container
+    {
+        $previous = static::$instance;
+        static::$instance = $container;
+        return $previous;
+    }
+
     public function bind(string $abstract, $concrete = null, bool $shared = false): void
     {
         if (is_null($concrete)) {

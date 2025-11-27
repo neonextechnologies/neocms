@@ -84,4 +84,11 @@ $app->singleton(\NeoPhp\Mail\Mailer::class, function ($app) {
 
 $app->alias(\NeoPhp\Mail\Mailer::class, 'mail');
 
+// Register Theme Service
+$app->singleton(\NeoPhp\Theme\ThemeManager::class, function ($app) {
+    return new \NeoPhp\Theme\ThemeManager($app->make('config'));
+});
+
+$app->alias(\NeoPhp\Theme\ThemeManager::class, 'theme');
+
 return $app;

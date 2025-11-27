@@ -10,8 +10,8 @@ return [
     |
     */
 
-    'active_frontend' => env('THEME_FRONTEND', 'default'),
-    'active_admin' => env('THEME_ADMIN', 'neo-admin'),
+    'active_frontend' => 'tabler-preview',
+    'active_admin' => 'tabler',
 
     /*
     |--------------------------------------------------------------------------

@@ -19,6 +19,36 @@ abstract class Command
     {
         $this->input = $input;
         $this->output = $output;
+        $this->parseSignature();
+    }
+
+    /**
+     * Parse signature and map arguments
+     */
+    protected function parseSignature(): void
+    {
+        if (empty($this->signature)) {
+            return;
+        }
+
+        // Parse signature format: command {arg1} {arg2?} {--option=default}
+        preg_match_all('/{([^}]+)}/', $this->signature, $matches);
+        
+        $argIndex = 0;
+        foreach ($matches[1] as $param) {
+            if (str_starts_with($param, '--')) {
+                // Option
+                continue;
+            }
+            
+            // Argument
+            $argName = trim($param, '? ');
+            $argName = explode(':', $argName)[0]; // Remove description
+            $argName = explode('=', $argName)[0]; // Remove default
+            $argName = trim($argName);
+            
+            $this->arguments[$argName] = $argIndex++;
+        }
     }
 
     /**
@@ -47,6 +77,12 @@ abstract class Command
      */
     protected function argument(string $name): mixed
     {
+        // If name is mapped, use the index
+        if (isset($this->arguments[$name])) {
+            return $this->input->getArgument($this->arguments[$name]);
+        }
+        
+        // Fallback to direct string lookup (won't work with current Input)
         return $this->input->getArgument($name);
     }
 

@@ -241,9 +241,13 @@ class ThemeManager
         
         if (file_exists($configPath)) {
             $content = file_get_contents($configPath);
-            $pattern = "/('{$key}'\s*=>\s*)'[^']*'/";
+            
+            // Match pattern for both direct values and env() calls
+            // e.g., 'active_admin' => 'value' or 'active_admin' => env('KEY', 'default')
+            $pattern = "/('{$key}'\s*=>\s*)(?:'[^']*'|env\([^)]+\))/";
             $replacement = "$1'{$value}'";
             $content = preg_replace($pattern, $replacement, $content);
+            
             file_put_contents($configPath, $content);
         }
     }

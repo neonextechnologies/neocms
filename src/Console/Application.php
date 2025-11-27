@@ -2,7 +2,7 @@
 
 namespace NeoPhp\Console;
 
-use NeoPhp\DI\Container;
+use NeoPhp\Container\Container;
 
 /**
  * Console Application

@@ -68,6 +68,12 @@ $console->registerCommands([
     'plugin:uninstall' => NeoPhp\Console\Commands\PluginUninstallCommand::class,
     'plugin:list' => NeoPhp\Console\Commands\PluginListCommand::class,
     
+    // Theme commands
+    'theme:list' => NeoPhp\Console\Commands\ThemeListCommand::class,
+    'theme:activate' => NeoPhp\Console\Commands\ThemeActivateCommand::class,
+    'theme:install' => NeoPhp\Console\Commands\ThemeInstallCommand::class,
+    'theme:create' => NeoPhp\Console\Commands\ThemeCreateCommand::class,
+    
     // Development server
     'serve' => NeoPhp\Console\Commands\ServeCommand::class,
 ]);
