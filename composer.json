@@ -86,9 +86,6 @@
             "@php -r \"echo '  2. Run: php neo migrate\\n';\"",
             "@php -r \"echo '  3. Run: php neo serve\\n\\n';\""
         ],
-        "post-autoload-dump": [
-            "@php neo package:discover --ansi || true"
-        ],
         "test": [
             "vendor/bin/phpunit"
         ]
