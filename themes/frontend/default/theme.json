@@ -1,0 +1,36 @@
+{
+  "name": "Neo Default",
+  "slug": "default",
+  "version": "1.0.0",
+  "type": "frontend",
+  "author": "Neonex Technologies",
+  "license": "MIT",
+  "description": "Default frontend theme for NeoCMS",
+  "screenshot": "screenshot.png",
+  "tags": ["default", "frontend", "minimal"],
+  "supports": {
+    "widgets": true,
+    "menus": true,
+    "custom_css": true,
+    "dark_mode": false
+  },
+  "settings": {
+    "colors": {
+      "primary": "#3490dc",
+      "secondary": "#6574cd",
+      "success": "#38c172",
+      "danger": "#e3342f",
+      "warning": "#f6993f",
+      "info": "#6cb2eb"
+    },
+    "typography": {
+      "font_family": "Inter, system-ui, -apple-system, sans-serif",
+      "font_size_base": "16px",
+      "line_height": "1.6"
+    },
+    "layout": {
+      "container_width": "1200px",
+      "sidebar_width": "300px"
+    }
+  }
+}

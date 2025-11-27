@@ -1,0 +1,38 @@
+{
+  "name": "Neo Admin",
+  "slug": "neo-admin",
+  "version": "1.0.0",
+  "type": "admin",
+  "author": "Neonex Technologies",
+  "license": "MIT",
+  "description": "Default admin theme for NeoCMS",
+  "screenshot": "screenshot.png",
+  "tags": ["default", "admin", "dashboard"],
+  "supports": {
+    "widgets": true,
+    "menus": true,
+    "custom_css": true,
+    "dark_mode": true
+  },
+  "settings": {
+    "colors": {
+      "primary": "#4F46E5",
+      "secondary": "#7C3AED",
+      "success": "#10B981",
+      "danger": "#EF4444",
+      "warning": "#F59E0B",
+      "info": "#3B82F6",
+      "sidebar_bg": "#1F2937",
+      "sidebar_text": "#F9FAFB"
+    },
+    "typography": {
+      "font_family": "Inter, system-ui, -apple-system, sans-serif",
+      "font_size_base": "14px",
+      "line_height": "1.5"
+    },
+    "layout": {
+      "sidebar_width": "280px",
+      "topbar_height": "64px"
+    }
+  }
+}
