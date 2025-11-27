@@ -1,0 +1,48 @@
+{
+  "name": "CoreUI Admin",
+  "slug": "coreui",
+  "version": "4.2.0",
+  "type": "admin",
+  "author": "CoreUI",
+  "license": "MIT",
+  "description": "Bootstrap Admin Template & UI Components Library",
+  "homepage": "https://coreui.io",
+  "screenshot": "screenshot.png",
+  "tags": ["admin", "dashboard", "bootstrap", "responsive", "flat"],
+  "supports": {
+    "widgets": true,
+    "menus": true,
+    "custom_css": true,
+    "dark_mode": true
+  },
+  "settings": {
+    "colors": {
+      "primary": "#321fdb",
+      "secondary": "#ced2d8",
+      "success": "#2eb85c",
+      "danger": "#e55353",
+      "warning": "#f9b115",
+      "info": "#39f",
+      "sidebar_bg": "#3c4b64",
+      "sidebar_text": "#ffffff"
+    },
+    "typography": {
+      "font_family": "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif",
+      "font_size_base": "14px",
+      "line_height": "1.5"
+    },
+    "layout": {
+      "sidebar_width": "256px",
+      "header_height": "56px"
+    }
+  },
+  "assets": {
+    "css": [
+      "https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/css/coreui.min.css"
+    ],
+    "js": [
+      "https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/js/coreui.bundle.min.js"
+    ],
+    "icons": "https://cdn.jsdelivr.net/npm/@coreui/icons@3.0.0/css/all.min.css"
+  }
+}

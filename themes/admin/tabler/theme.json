@@ -1,0 +1,49 @@
+{
+  "name": "Tabler Admin",
+  "slug": "tabler",
+  "version": "1.0.0-beta19",
+  "type": "admin",
+  "author": "Tabler",
+  "license": "MIT",
+  "description": "Premium and Open Source dashboard template with responsive and high quality UI",
+  "homepage": "https://tabler.io",
+  "screenshot": "screenshot.png",
+  "tags": ["admin", "dashboard", "bootstrap", "responsive", "modern"],
+  "supports": {
+    "widgets": true,
+    "menus": true,
+    "custom_css": true,
+    "dark_mode": true
+  },
+  "settings": {
+    "colors": {
+      "primary": "#0054a6",
+      "secondary": "#6c757d",
+      "success": "#2fb344",
+      "danger": "#d63939",
+      "warning": "#f76707",
+      "info": "#4299e1",
+      "sidebar_bg": "#ffffff",
+      "sidebar_text": "#1e293b"
+    },
+    "typography": {
+      "font_family": "-apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif",
+      "font_size_base": "14px",
+      "line_height": "1.4285714"
+    },
+    "layout": {
+      "navbar_height": "3.5rem",
+      "sidebar_width": "15rem",
+      "layout_type": "vertical"
+    }
+  },
+  "assets": {
+    "css": [
+      "https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta19/dist/css/tabler.min.css"
+    ],
+    "js": [
+      "https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta19/dist/js/tabler.min.js"
+    ],
+    "icons": "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Tabler Preview",
+  "slug": "tabler-preview",
+  "version": "1.0.0-beta19",
+  "type": "frontend",
+  "author": "Tabler",
+  "license": "MIT",
+  "description": "Clean and elegant frontend theme based on Tabler",
+  "homepage": "https://tabler.io",
+  "screenshot": "screenshot.png",
+  "tags": ["frontend", "bootstrap", "responsive", "modern", "clean"],
+  "supports": {
+    "widgets": true,
+    "menus": true,
+    "custom_css": true,
+    "dark_mode": true
+  },
+  "settings": {
+    "colors": {
+      "primary": "#0054a6",
+      "secondary": "#6c757d",
+      "success": "#2fb344",
+      "danger": "#d63939",
+      "warning": "#f76707",
+      "info": "#4299e1"
+    },
+    "typography": {
+      "font_family": "-apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif",
+      "font_size_base": "16px",
+      "line_height": "1.4285714"
+    },
+    "layout": {
+      "container_width": "1320px",
+      "navbar_height": "3.5rem"
+    }
+  },
+  "assets": {
+    "css": [
+      "https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta19/dist/css/tabler.min.css"
+    ],
+    "js": [
+      "https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta19/dist/js/tabler.min.js"
+    ],
+    "icons": "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+  }
+}
